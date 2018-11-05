@@ -15,7 +15,7 @@
 VSM：
 1.通过函数get_word_nubmber用来获取每个文件中单词数目存入字典file_word_dict，该函数会将单词小写化，使用nltk库进行词性还原，去掉不属于单词的符号，file_word_dict结构为{file-{word-numbers}}，结果写入file_word_dict.json中；
 2.通过file_word_dict计算出所有文件内单词和单词出现个数存入字典word_numbers，再对file_word_dict进行一些处理去掉不再10-1000之间的单词；
-3.通过函数com_VSM计算出每个文件内每个单词打TF-IDF，同样存入file_word_dict中，结构为{file-{word-tf*idf}},结果写入vsm.json文件中。
+3.通过函数com_VSM计算出每个文件内每个单词打TF-IDF，同样存入vsm-word中，结构为{file-{word-tf*idf}},结果写入vsm.json文件中。
 
 KNN：
 1.将所有数据分为20%测试数据和80%训练数据
